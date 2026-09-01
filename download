@@ -1,0 +1,13 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Editores
+.vscode/
+.idea/
+
+# Logs
+*.log
