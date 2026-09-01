@@ -1,0 +1,1423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Oliver Truck | Reforma e Fabricação de Implementos Rodoviários</title>
+<meta name="description" content="A Oliver Truck atua há mais de 20 anos com reforma e fabricação de implementos rodoviários. Mais de 4.500 implementos reformados e 200+ empresas atendidas. Solicite seu orçamento pelo WhatsApp.">
+<meta name="keywords" content="reforma de implementos rodoviários, fabricação de implementos rodoviários, reforma de baú, reforma de sider, implementos rodoviários, fabricante de implementos rodoviários, manutenção de implementos">
+<meta name="robots" content="index, follow">
+<!-- URLs abaixo assumem o domínio olivertruck.com.br (mesmo do e-mail). Se o domínio final for outro,
+     ou enquanto usar apenas a URL padrão do Vercel, atualize estas 3 URLs (canonical, og:url e "url" no schema). -->
+<link rel="canonical" href="https://www.olivertruck.com.br/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Oliver Truck">
+<meta property="og:title" content="Oliver Truck | Reforma e Fabricação de Implementos Rodoviários">
+<meta property="og:description" content="Mais de 20 anos de experiência. 4.500+ implementos reformados. 200+ empresas atendidas. Solicite seu orçamento pelo WhatsApp.">
+<meta property="og:image" content="https://SEU-DOMINIO-AQUI.vercel.app/assets/logo.jpg">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://www.olivertruck.com.br/">
+
+<!-- Favicon: usando a logo por padrão. Se preferir, gere um favicon.ico dedicado e troque aqui. -->
+<link rel="icon" href="assets/logo.jpg" type="image/jpeg">
+
+<!-- Google Fonts: Oswald (display/técnica, condensada) + Barlow (corpo) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+<!-- ================= SCHEMA MARKUP (LocalBusiness) =================
+     Edite os campos abaixo (telefone, endereço, geo) quando tiver os dados completos. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Oliver Truck",
+  "description": "Reforma e fabricação de implementos rodoviários.",
+  "email": "comercial@olivertruck.com.br",
+  "telephone": "+55-11-94703-7352",
+  "taxID": "44.845.165/0001-30",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Francisco Xavier Correa, 1660",
+    "addressLocality": "Guarulhos",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "url": "https://www.olivertruck.com.br/",
+  "image": "https://SEU-DOMINIO-AQUI.vercel.app/assets/logo.jpg",
+  "priceRange": "$$"
+}
+</script>
+
+<style>
+/* ==========================================================================
+   CONFIGURAÇÕES — VARIÁVEIS DE COR E TIPOGRAFIA
+   Para trocar a identidade visual, altere apenas os valores aqui.
+   ========================================================================== */
+:root{
+  /* Paleta industrial: preto, grafite, prata, branco + amarelo de destaque (da logo) */
+  --color-bg:            #0A0A0B;
+  --color-bg-soft:       #111113;
+  --color-surface:       #18181B;
+  --color-surface-alt:   #202024;
+  --color-border:        #2C2C31;
+  --color-steel:         #9A9DA6;
+  --color-steel-light:   #D2D4D9;
+  --color-white:         #F5F5F6;
+  --color-text:          #E7E7E9;
+  --color-muted:         #90929A;
+  --color-primary:       #F4B400;   /* amarelo Oliver Truck */
+  --color-primary-dark:  #C99000;
+  --color-primary-ink:   #171400;   /* texto sobre fundo amarelo */
+  --color-whatsapp:      #25D366;
+  --color-whatsapp-dark: #1DAE54;
+
+  --font-display: 'Oswald', 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+
+  --container-w: 1180px;
+  --header-h: 76px;
+}
+
+/* ==========================================================================
+   RESET / BASE
+   ========================================================================== */
+*,*::before,*::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--color-bg);
+  color:var(--color-text);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  max-width:100vw;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+ul{ margin:0; padding:0; list-style:none; }
+button{ font-family:inherit; cursor:pointer; }
+h1,h2,h3,h4{ font-family:var(--font-display); margin:0; color:var(--color-white); letter-spacing:0.01em; }
+p{ margin:0; }
+:focus-visible{ outline:3px solid var(--color-primary); outline-offset:2px; }
+
+.container{ max-width:var(--container-w); margin:0 auto; padding:0 24px; }
+.section{ padding:96px 0; position:relative; }
+.section--tight{ padding:72px 0; }
+@media (max-width:768px){
+  .section{ padding:64px 0; }
+  .section--tight{ padding:48px 0; }
+}
+
+.eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:var(--font-display);
+  font-size:13px; font-weight:600; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--color-primary);
+  margin-bottom:14px;
+}
+.eyebrow::before{
+  content:""; width:22px; height:2px; background:var(--color-primary); display:inline-block;
+}
+
+.section-title{ font-size:clamp(28px,4vw,42px); font-weight:600; line-height:1.15; max-width:720px; }
+.section-title--center{ margin-left:auto; margin-right:auto; text-align:center; }
+.section-sub{ color:var(--color-muted); font-size:17px; max-width:620px; margin-top:14px; }
+.section-sub--center{ margin-left:auto; margin-right:auto; text-align:center; }
+.section-head{ margin-bottom:56px; }
+.section-head--center{ text-align:center; }
+
+/* Textura de chapa xadrez (diamond plate) usada sutilmente como marca registrada visual */
+.plate-texture{
+  background-image:
+    radial-gradient(circle at 4px 4px, rgba(255,255,255,0.045) 1.4px, transparent 1.6px);
+  background-size:18px 18px;
+}
+
+/* Divisor angulado entre seções — remete ao corte de chapa metálica */
+.angled-divider{
+  position:absolute; left:0; width:100%; height:64px; pointer-events:none;
+}
+.angled-divider--top{ top:-1px; }
+.angled-divider--bottom{ bottom:-1px; }
+
+/* ==========================================================================
+   BOTÕES / CTAs
+   ========================================================================== */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  font-family:var(--font-display); font-weight:600; font-size:15px; letter-spacing:0.03em; text-transform:uppercase;
+  padding:16px 30px; border-radius:var(--radius-sm); border:2px solid transparent;
+  transition:transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease;
+  white-space:nowrap;
+}
+.btn:active{ transform:translateY(1px); }
+.btn-lg{ padding:19px 38px; font-size:16px; }
+.btn-block{ width:100%; }
+
+.btn--whatsapp{
+  background:var(--color-whatsapp); color:#06210F; border-color:var(--color-whatsapp);
+  box-shadow:0 8px 24px -8px rgba(37,211,102,0.55);
+}
+.btn--whatsapp:hover{ background:var(--color-whatsapp-dark); border-color:var(--color-whatsapp-dark); box-shadow:0 10px 30px -6px rgba(37,211,102,0.7); }
+.btn--whatsapp svg{ width:20px; height:20px; flex-shrink:0; }
+
+.btn--primary{ background:var(--color-primary); color:var(--color-primary-ink); border-color:var(--color-primary); }
+.btn--primary:hover{ background:var(--color-primary-dark); border-color:var(--color-primary-dark); }
+
+.btn--outline{ background:transparent; color:var(--color-white); border-color:rgba(255,255,255,0.28); }
+.btn--outline:hover{ border-color:var(--color-primary); color:var(--color-primary); }
+
+.btn--dark{ background:var(--color-surface-alt); color:var(--color-white); border-color:var(--color-border); }
+.btn--dark:hover{ border-color:var(--color-primary); }
+
+.cta-row{ display:flex; flex-wrap:wrap; gap:16px; align-items:center; }
+
+/* Em telas pequenas, os botões de CTA (que podem ter textos longos, como
+   "Solicitar orçamento pelo WhatsApp") ocupam a largura toda e quebram
+   linha em vez de estourar o container. */
+@media (max-width:480px){
+  .btn{ white-space:normal; text-align:center; line-height:1.25; }
+  .cta-row .btn{ width:100%; }
+}
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.site-header{
+  position:fixed; top:0; left:0; width:100%; z-index:1000;
+  height:var(--header-h);
+  background:rgba(10,10,11,0.72);
+  backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(255,255,255,0.06);
+  transition:background-color .25s ease, border-color .25s ease;
+}
+.site-header.is-scrolled{ background:rgba(10,10,11,0.94); border-bottom-color:rgba(255,255,255,0.1); }
+.header-inner{
+  height:100%; display:flex; align-items:center; justify-content:space-between; gap:20px;
+}
+.brand{ display:flex; align-items:center; gap:12px; flex-shrink:0; }
+.brand img{ height:52px; width:auto; }
+.brand-name{ display:none; }
+
+.main-nav{ display:flex; align-items:center; gap:34px; }
+.main-nav a{
+  position:relative; font-family:var(--font-display); font-size:14px; font-weight:500;
+  letter-spacing:0.03em; text-transform:uppercase; color:var(--color-steel-light);
+  padding:8px 0; transition:color .2s ease;
+}
+.main-nav a::after{
+  content:""; position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--color-primary);
+  transition:width .25s ease;
+}
+.main-nav a:hover{ color:var(--color-white); }
+.main-nav a:hover::after{ width:100%; }
+
+.header-actions{ display:flex; align-items:center; gap:14px; flex-shrink:0; }
+.header-actions .btn{ padding:12px 22px; font-size:13px; white-space:nowrap; }
+@media (max-width:960px){
+  .header-actions .btn{ padding:12px 16px; }
+}
+
+.hamburger{
+  display:none; flex-direction:column; align-items:center; justify-content:center;
+  width:44px; height:44px; background:transparent; border:1px solid var(--color-border); border-radius:var(--radius-sm);
+  padding:0; flex-shrink:0;
+}
+.hamburger span{ display:block; width:20px; height:2px; background:var(--color-white); transition:transform .25s ease, opacity .25s ease; }
+.hamburger span + span{ margin-top:5px; }
+.hamburger.is-active span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.hamburger.is-active span:nth-child(2){ opacity:0; }
+.hamburger.is-active span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+.mobile-nav{
+  position:fixed; top:var(--header-h); left:0; width:100%; z-index:999;
+  background:var(--color-bg-soft); border-bottom:1px solid var(--color-border);
+  max-height:0; overflow:hidden; transition:max-height .3s ease;
+}
+.mobile-nav.is-open{ max-height:520px; }
+.mobile-nav ul{ padding:12px 24px 20px; display:flex; flex-direction:column; }
+.mobile-nav a{
+  display:block; padding:14px 0; font-family:var(--font-display); font-size:16px; text-transform:uppercase;
+  letter-spacing:0.03em; color:var(--color-steel-light); border-bottom:1px solid rgba(255,255,255,0.06);
+}
+.mobile-nav .btn{ margin-top:16px; }
+
+@media (max-width:960px){
+  .main-nav{ display:none; }
+  .header-actions .btn span.btn-text-full{
+    display:none !important; width:0; height:0; overflow:hidden; opacity:0; position:absolute; pointer-events:none;
+  }
+  .header-actions .btn{ overflow:hidden; max-width:56px; }
+  .hamburger{ display:flex; }
+}
+@media (min-width:961px){ .mobile-nav{ display:none; } }
+
+/* ==========================================================================
+   HERO
+   ========================================================================== */
+.hero{
+  position:relative; padding-top:calc(var(--header-h) + 72px); padding-bottom:96px;
+  background:
+    radial-gradient(ellipse 900px 500px at 85% 0%, rgba(244,180,0,0.09), transparent 60%),
+    linear-gradient(180deg, #0A0A0B 0%, #0E0E10 100%);
+  overflow:hidden;
+  border-bottom:1px solid var(--color-border);
+}
+.hero::before{ /* linhas técnicas de fundo, remetem a desenho de engenharia */
+  content:""; position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 70% 60% at 70% 30%, black, transparent);
+  pointer-events:none;
+}
+.hero-grid{
+  position:relative; z-index:1;
+  display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
+}
+.hero-tag{
+  display:inline-flex; align-items:center; gap:10px; padding:8px 16px;
+  background:rgba(244,180,0,0.1); border:1px solid rgba(244,180,0,0.35); border-radius:999px;
+  font-family:var(--font-display); font-size:12.5px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase;
+  color:var(--color-primary); margin-bottom:22px;
+}
+.hero-tag .dot{ width:7px; height:7px; border-radius:50%; background:var(--color-primary); }
+.hero h1{
+  font-size:clamp(34px,4.6vw,58px); font-weight:700; line-height:1.08; letter-spacing:-0.01em;
+  margin-bottom:22px;
+}
+.hero h1 em{ font-style:normal; color:var(--color-primary); }
+.hero-sub{ font-size:18px; color:var(--color-steel-light); max-width:540px; margin-bottom:34px; }
+.hero-note{ margin-top:22px; display:flex; align-items:center; gap:10px; color:var(--color-muted); font-size:14px; }
+.hero-note svg{ width:18px; height:18px; color:var(--color-primary); flex-shrink:0; }
+
+.hero-visual{
+  position:relative; border-radius:var(--radius-lg); overflow:hidden;
+  border:1px solid var(--color-border);
+  background:linear-gradient(155deg, var(--color-surface) 0%, #0D0D0F 100%);
+  aspect-ratio:4/3.1; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 40px 80px -30px rgba(0,0,0,0.7);
+}
+.hero-visual .plate-texture{ position:absolute; inset:0; opacity:0.5; }
+.hero-visual .visual-frame{
+  position:relative; z-index:1; text-align:center; padding:32px; color:var(--color-muted);
+}
+.hero-visual .visual-frame--logo{ padding:32px; width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
+.hero-logo{ max-width:100%; max-height:100%; width:100%; height:100%; object-fit:contain; margin:0 auto; filter:drop-shadow(0 18px 40px rgba(0,0,0,0.5)); }
+.hero-visual .visual-frame strong{ display:block; color:var(--color-steel-light); font-family:var(--font-display); font-size:14px; letter-spacing:0.04em; text-transform:uppercase; margin-top:12px; }
+.hero-visual .frame-corner{ position:absolute; width:26px; height:26px; border:2px solid rgba(244,180,0,0.55); }
+.hero-visual .frame-corner.tl{ top:16px; left:16px; border-right:none; border-bottom:none; }
+.hero-visual .frame-corner.br{ bottom:16px; right:16px; border-left:none; border-top:none; }
+.truck-illustration{ width:78%; height:auto; opacity:0.92; }
+
+@media (max-width:960px){
+  .hero-grid{ grid-template-columns:1fr; gap:40px; }
+  .hero{ padding-top:calc(var(--header-h) + 40px); padding-bottom:56px; }
+  .hero-visual{ order:-1; aspect-ratio:1/1; max-width:420px; margin:0 auto; }
+}
+
+/* ==========================================================================
+   NÚMEROS / PROVA
+   ========================================================================== */
+.stats{
+  background:var(--color-bg-soft); border-bottom:1px solid var(--color-border);
+  padding:0;
+}
+.stats-grid{
+  display:grid; grid-template-columns:repeat(3,1fr);
+}
+.stat{
+  text-align:center; padding:48px 24px;
+  border-right:1px solid var(--color-border);
+}
+.stat:last-child{ border-right:none; }
+.stat-number{
+  font-family:var(--font-display); font-weight:700; font-size:clamp(38px,5vw,58px); color:var(--color-primary);
+  line-height:1; display:flex; justify-content:center; align-items:baseline; gap:2px;
+}
+.stat-label{ margin-top:10px; font-size:14.5px; color:var(--color-steel-light); text-transform:uppercase; letter-spacing:0.05em; font-family:var(--font-display); font-weight:500; }
+@media (max-width:700px){
+  .stats-grid{ grid-template-columns:1fr; }
+  .stat{ border-right:none; border-bottom:1px solid var(--color-border); padding:32px 24px; }
+  .stat:last-child{ border-bottom:none; }
+}
+
+/* ==========================================================================
+   REFORMA OU FABRICAÇÃO — 2 CARDS GRANDES
+   ========================================================================== */
+.split-cards{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+.split-card{
+  position:relative; padding:44px 38px; border-radius:var(--radius-lg);
+  border:1px solid var(--color-border); background:var(--color-surface);
+  overflow:hidden; transition:border-color .25s ease, transform .25s ease;
+}
+.split-card:hover{ transform:translateY(-4px); border-color:rgba(244,180,0,0.4); }
+.split-card::before{
+  content:""; position:absolute; top:0; right:0; width:180px; height:180px;
+  background:radial-gradient(circle, rgba(244,180,0,0.14), transparent 70%);
+}
+.split-card .tag{
+  display:inline-block; font-family:var(--font-display); font-size:12px; font-weight:600;
+  letter-spacing:0.1em; text-transform:uppercase; color:var(--color-primary);
+  border:1px solid rgba(244,180,0,0.35); padding:5px 12px; border-radius:999px; margin-bottom:20px;
+}
+.split-card h3{ font-size:26px; font-weight:600; margin-bottom:14px; line-height:1.25; }
+.split-card p{ color:var(--color-muted); font-size:15.5px; margin-bottom:28px; }
+@media (max-width:800px){ .split-cards{ grid-template-columns:1fr; } }
+
+/* ==========================================================================
+   GRID DE CARDS GENÉRICO (Diferenciais / Serviços)
+   ========================================================================== */
+.cards-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.cards-grid--4{ grid-template-columns:repeat(4,1fr); }
+.card{
+  background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md);
+  padding:32px 26px; transition:border-color .2s ease, transform .2s ease;
+}
+.card:hover{ border-color:rgba(244,180,0,0.35); transform:translateY(-3px); }
+.card-icon{
+  width:48px; height:48px; border-radius:var(--radius-sm); background:rgba(244,180,0,0.1);
+  display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+}
+.card-icon svg{ width:24px; height:24px; color:var(--color-primary); }
+.card h3{ font-size:18px; font-weight:600; margin-bottom:10px; }
+.card p{ color:var(--color-muted); font-size:14.5px; }
+
+.service-card{ display:flex; flex-direction:column; }
+.service-card .btn{ margin-top:auto; padding-top:14px; }
+.service-cta-link{
+  display:inline-flex; align-items:center; gap:6px; margin-top:auto; padding-top:8px;
+  font-family:var(--font-display); font-size:13px; font-weight:600; letter-spacing:0.03em; text-transform:uppercase;
+  color:var(--color-primary);
+  background:none; border:none; padding-left:0; padding-right:0; padding-bottom:0;
+  appearance:none; -webkit-appearance:none; text-align:left;
+}
+.service-cta-link:hover{ color:var(--color-primary-dark); }
+.service-cta-link svg{ width:16px; height:16px; transition:transform .2s ease; }
+.service-cta-link:hover svg{ transform:translateX(3px); }
+
+.services-tabs{ display:flex; gap:12px; margin-bottom:36px; flex-wrap:wrap; }
+.services-tab{
+  padding:11px 22px; border-radius:999px; border:1px solid var(--color-border); background:var(--color-surface);
+  font-family:var(--font-display); font-size:13.5px; font-weight:600; letter-spacing:0.04em; text-transform:uppercase;
+  color:var(--color-steel-light); transition:all .2s ease;
+}
+.services-tab.is-active{ background:var(--color-primary); color:var(--color-primary-ink); border-color:var(--color-primary); }
+.services-panel{ display:none; }
+.services-panel.is-active{ display:grid; }
+
+@media (max-width:960px){
+  .cards-grid{ grid-template-columns:repeat(2,1fr); }
+  .cards-grid--4{ grid-template-columns:repeat(2,1fr); }
+}
+@media (max-width:620px){
+  .cards-grid,.cards-grid--4{ grid-template-columns:1fr; }
+}
+
+/* ==========================================================================
+   B2B — EMPRESAS E FROTISTAS
+   ========================================================================== */
+.b2b{
+  background:
+    linear-gradient(120deg, rgba(244,180,0,0.05), transparent 55%),
+    var(--color-bg-soft);
+  border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);
+}
+.b2b-grid{ display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
+.b2b-audiences{ display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:30px; }
+.audience-chip{
+  display:flex; align-items:center; gap:12px; padding:16px 18px; background:var(--color-surface);
+  border:1px solid var(--color-border); border-radius:var(--radius-sm); font-size:14.5px; color:var(--color-steel-light);
+}
+.audience-chip svg{ width:20px; height:20px; color:var(--color-primary); flex-shrink:0; }
+.b2b-panel{
+  background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg);
+  padding:40px; position:relative;
+}
+.b2b-panel::before{ content:""; position:absolute; top:-1px; left:32px; width:64px; height:4px; background:var(--color-primary); border-radius:0 0 3px 3px; }
+.b2b-panel h4{ font-size:15px; color:var(--color-muted); text-transform:uppercase; letter-spacing:0.06em; font-family:var(--font-display); margin-bottom:18px; }
+.b2b-panel ul{ display:flex; flex-direction:column; gap:14px; margin-bottom:28px; }
+.b2b-panel li{ display:flex; gap:10px; align-items:flex-start; color:var(--color-text); font-size:15px; }
+.b2b-panel li svg{ width:18px; height:18px; color:var(--color-primary); flex-shrink:0; margin-top:2px; }
+@media (max-width:900px){ .b2b-grid{ grid-template-columns:1fr; } .b2b-audiences{ grid-template-columns:1fr; } }
+
+/* ==========================================================================
+   SOBRE / EXPERIÊNCIA
+   ========================================================================== */
+.about{ display:grid; grid-template-columns:0.95fr 1.05fr; gap:64px; align-items:center; }
+.about-visual{
+  aspect-ratio:5/4; border-radius:var(--radius-lg); border:1px solid var(--color-border);
+  background:linear-gradient(160deg, var(--color-surface) 0%, #0D0D0F 100%);
+  position:relative; overflow:hidden; display:flex; align-items:center; justify-content:center;
+}
+.about-photo{ width:100%; height:100%; object-fit:cover; display:block; }
+.about ul.about-points{ margin-top:26px; display:flex; flex-direction:column; gap:12px; }
+.about ul.about-points li{ display:flex; gap:10px; font-size:15px; color:var(--color-steel-light); }
+.about ul.about-points svg{ width:18px; height:18px; color:var(--color-primary); flex-shrink:0; margin-top:2px; }
+@media (max-width:900px){ .about{ grid-template-columns:1fr; gap:36px; } .about-visual{ order:-1; } }
+
+/* ==========================================================================
+   PORTFÓLIO / GALERIA
+   ========================================================================== */
+.gallery-filters{ display:flex; gap:10px; margin-bottom:32px; flex-wrap:wrap; }
+.gallery-filter{
+  padding:9px 18px; border-radius:999px; border:1px solid var(--color-border); background:var(--color-surface);
+  font-family:var(--font-display); font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:0.04em;
+  color:var(--color-steel-light);
+}
+.gallery-filter.is-active{ background:var(--color-primary); color:var(--color-primary-ink); border-color:var(--color-primary); }
+.gallery-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:16px; }
+.gallery-item{
+  aspect-ratio:1/1; border-radius:var(--radius-sm); overflow:hidden; position:relative;
+  border:1px solid var(--color-border); background:var(--color-surface-alt);
+  display:flex; align-items:center; justify-content:center; cursor:pointer;
+  transition:transform .2s ease;
+}
+.gallery-item:hover{ transform:scale(1.02); }
+.gallery-item .ph{ text-align:center; color:var(--color-muted); font-size:12px; padding:10px; }
+.gallery-item img{ width:100%; height:100%; object-fit:cover; display:block; }
+.gallery-item .tag-cat{
+  position:absolute; top:10px; left:10px; background:rgba(0,0,0,0.6); color:var(--color-primary);
+  font-family:var(--font-display); font-size:10.5px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase;
+  padding:4px 9px; border-radius:999px; border:1px solid rgba(244,180,0,0.4);
+}
+.gallery-item .zoom-icon{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  background:rgba(10,10,11,0.35); opacity:0; transition:opacity .2s ease;
+}
+.gallery-item:hover .zoom-icon{ opacity:1; }
+.gallery-item .zoom-icon svg{ width:26px; height:26px; color:#fff; }
+@media (max-width:900px){ .gallery-grid{ grid-template-columns:repeat(2,1fr); } }
+
+.lightbox{
+  position:fixed; inset:0; z-index:2000; background:rgba(6,6,7,0.92);
+  display:flex; align-items:center; justify-content:center; padding:24px;
+  opacity:0; pointer-events:none; transition:opacity .2s ease;
+}
+.lightbox.is-open{ opacity:1; pointer-events:auto; }
+.lightbox-content{
+  max-width:720px; width:100%; background:var(--color-surface); border:1px solid var(--color-border);
+  border-radius:var(--radius-md); overflow:hidden;
+}
+.lightbox-media{ aspect-ratio:4/3; background:var(--color-bg-soft); display:flex; align-items:center; justify-content:center; color:var(--color-muted); font-size:13px; }
+.lightbox-caption{ padding:18px 22px; display:flex; justify-content:space-between; align-items:center; }
+.lightbox-close{
+  position:absolute; top:22px; right:26px; width:44px; height:44px; border-radius:50%;
+  background:var(--color-surface); border:1px solid var(--color-border); display:flex; align-items:center; justify-content:center;
+}
+.lightbox-close svg{ width:20px; height:20px; }
+
+/* ==========================================================================
+   PROCESSO
+   ========================================================================== */
+.process-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:28px; position:relative; }
+.process-step{ position:relative; padding-top:8px; }
+.process-num{
+  font-family:var(--font-display); font-size:15px; font-weight:700; color:var(--color-primary-ink);
+  background:var(--color-primary); width:38px; height:38px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+}
+.process-step h3{ font-size:17.5px; margin-bottom:8px; }
+.process-step p{ color:var(--color-muted); font-size:14.5px; }
+.process-connector{
+  position:absolute; top:19px; left:calc(50% + 19px); width:calc(100% - 38px); height:1px;
+  background:repeating-linear-gradient(90deg, var(--color-border) 0 8px, transparent 8px 14px);
+}
+@media (max-width:900px){
+  .process-grid{ grid-template-columns:1fr 1fr; row-gap:36px; }
+  .process-connector{ display:none; }
+}
+@media (max-width:560px){ .process-grid{ grid-template-columns:1fr; } }
+
+/* ==========================================================================
+   CAPTAÇÃO DE LEAD (baixa barreira)
+   ========================================================================== */
+.lead-band{
+  background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg);
+  padding:44px 48px; display:flex; justify-content:space-between; align-items:center; gap:32px; flex-wrap:wrap;
+}
+.lead-band h3{ font-size:23px; margin-bottom:8px; max-width:520px; }
+.lead-band p{ color:var(--color-muted); font-size:15px; max-width:480px; }
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+.faq-list{ max-width:760px; margin:0 auto; }
+.faq-item{ border-bottom:1px solid var(--color-border); }
+.faq-question{
+  width:100%; background:none; border:none; text-align:left; padding:22px 4px;
+  display:flex; justify-content:space-between; align-items:center; gap:16px;
+  font-family:var(--font-display); font-size:16.5px; font-weight:500; color:var(--color-white);
+}
+.faq-question .plus{
+  width:26px; height:26px; border-radius:50%; border:1px solid var(--color-border); flex-shrink:0;
+  display:flex; align-items:center; justify-content:center; position:relative; transition:transform .25s ease, border-color .25s ease;
+}
+.faq-question .plus::before,.faq-question .plus::after{ content:""; position:absolute; background:var(--color-steel-light); transition:opacity .2s ease; }
+.faq-question .plus::before{ width:10px; height:1.5px; }
+.faq-question .plus::after{ width:1.5px; height:10px; }
+.faq-item.is-open .faq-question .plus{ transform:rotate(45deg); border-color:var(--color-primary); }
+.faq-answer{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+.faq-answer-inner{ padding:0 30px 24px 4px; color:var(--color-muted); font-size:15px; }
+
+/* ==========================================================================
+   CTA FINAL
+   ========================================================================== */
+.cta-final{
+  position:relative; text-align:center; overflow:hidden;
+  background:radial-gradient(ellipse 900px 400px at 50% 0%, rgba(244,180,0,0.16), transparent 65%), var(--color-bg-soft);
+  border-top:1px solid var(--color-border);
+}
+.cta-final .plate-texture{ position:absolute; inset:0; opacity:0.35; }
+.cta-final-inner{ position:relative; z-index:1; }
+.cta-final h2{ font-size:clamp(30px,4.6vw,48px); font-weight:700; max-width:760px; margin:0 auto 16px; }
+.cta-final p{ color:var(--color-steel-light); font-size:18px; max-width:560px; margin:0 auto 34px; }
+.cta-final .cta-row{ justify-content:center; }
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.site-footer{ background:#08080A; border-top:1px solid var(--color-border); padding:64px 0 28px; }
+.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; margin-bottom:48px; }
+.footer-brand img{ height:56px; margin-bottom:16px; }
+.footer-brand p{ color:var(--color-muted); font-size:14px; max-width:280px; }
+.footer-col h4{ font-family:var(--font-display); font-size:13px; letter-spacing:0.06em; text-transform:uppercase; color:var(--color-steel-light); margin-bottom:18px; }
+.footer-col ul{ display:flex; flex-direction:column; gap:11px; }
+.footer-col a, .footer-col span{ color:var(--color-muted); font-size:14.5px; }
+.footer-col a:hover{ color:var(--color-primary); }
+.footer-social{ display:flex; gap:12px; margin-top:6px; }
+.footer-social a{
+  width:38px; height:38px; border:1px solid var(--color-border); border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+}
+.footer-social svg{ width:17px; height:17px; }
+.footer-bottom{
+  border-top:1px solid var(--color-border); padding-top:24px;
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  font-size:13px; color:var(--color-muted);
+}
+@media (max-width:900px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+@media (max-width:560px){ .footer-grid{ grid-template-columns:1fr; gap:32px; } }
+
+/* ==========================================================================
+   WHATSAPP FLUTUANTE
+   ========================================================================== */
+.wa-float{
+  position:fixed; bottom:26px; right:26px; z-index:1500;
+  width:64px; height:64px; border-radius:50%; background:var(--color-whatsapp);
+  display:flex; align-items:center; justify-content:center;
+  box-shadow:0 10px 26px -6px rgba(37,211,102,0.6);
+  animation:wa-pulse 2.6s ease-in-out infinite;
+}
+.wa-float svg{ width:32px; height:32px; color:#06210F; }
+.wa-float::before{
+  content:""; position:absolute; inset:-6px; border-radius:50%; border:2px solid rgba(37,211,102,0.45);
+  animation:wa-ring 2.6s ease-out infinite;
+}
+@keyframes wa-pulse{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.06); } }
+@keyframes wa-ring{ 0%{ opacity:0.8; transform:scale(0.9); } 100%{ opacity:0; transform:scale(1.35); } }
+@media (max-width:600px){
+  .wa-float{ width:58px; height:58px; bottom:18px; right:16px; }
+  .wa-float svg{ width:28px; height:28px; }
+}
+
+/* ==========================================================================
+   REVEAL ON SCROLL
+   ========================================================================== */
+/* Por padrão o conteúdo fica sempre visível — a animação de entrada só é
+   ativada quando o JavaScript confirma suporte real a IntersectionObserver
+   (classe "js-anim" no <html>). Isso evita que o conteúdo suma em navegadores
+   antigos/in-app (WhatsApp, Instagram) onde essa API pode não funcionar. */
+.reveal{ opacity:1; transform:none; }
+.js-anim .reveal{ opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease; }
+.js-anim .reveal.is-visible{ opacity:1; transform:translateY(0); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+}
+
+/* skip link acessibilidade */
+.skip-link{
+  position:absolute; left:-9999px; top:0; background:var(--color-primary); color:var(--color-primary-ink);
+  padding:12px 18px; z-index:3000; font-family:var(--font-display); font-weight:600;
+}
+.skip-link:focus{ left:16px; top:16px; }
+</style>
+</head>
+<body>
+<a href="#conteudo-principal" class="skip-link">Pular para o conteúdo</a>
+
+<!-- ======================================================================
+     HEADER
+     ====================================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#topo" class="brand" aria-label="Oliver Truck - Início">
+      <img src="assets/logo.jpg" alt="Oliver Truck - Implementos Rodoviários">
+    </a>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#topo">Início</a>
+      <a href="#reforma-fabricacao">Reforma</a>
+      <a href="#reforma-fabricacao">Fabricação</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#faq">Contato</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="btn btn--whatsapp" data-wa="geral">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm5.8 14.15c-.24.68-1.4 1.33-1.94 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.95-.31-1.63-.6-2.87-1.24-4.74-4.12-4.88-4.31-.14-.19-1.17-1.56-1.17-2.98s.74-2.11 1-2.4c.25-.28.55-.35.74-.35s.37 0 .53.01c.17.01.4-.06.62.48.24.58.81 2 .88 2.14.07.14.11.31.02.5-.09.19-.14.31-.27.48-.14.17-.29.37-.41.5-.14.14-.28.29-.12.57.16.28.72 1.2 1.55 1.94 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.61-.07.17-.2.71-.83.9-1.11.19-.28.38-.23.63-.14.26.09 1.64.78 1.92.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+        <span class="btn-text-full">Solicitar orçamento</span>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navegação mobile">
+    <ul>
+      <li><a href="#topo">Início</a></li>
+      <li><a href="#reforma-fabricacao">Reforma</a></li>
+      <li><a href="#reforma-fabricacao">Fabricação</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#sobre">Sobre nós</a></li>
+      <li><a href="#faq">Contato</a></li>
+    </ul>
+    <div class="container">
+      <button class="btn btn--whatsapp btn-block" data-wa="geral">Solicitar orçamento pelo WhatsApp</button>
+    </div>
+  </nav>
+</header>
+
+<main id="conteudo-principal">
+
+<!-- ======================================================================
+     HERO
+     ====================================================================== -->
+<section class="hero" id="topo">
+  <div class="container hero-grid">
+    <div class="reveal is-visible">
+      <span class="hero-tag"><span class="dot"></span> Reforma &amp; Fabricação de Implementos Rodoviários</span>
+      <h1>Reforma e fabricação de implementos rodoviários com <em>mais de 20 anos</em> de experiência.</h1>
+      <p class="hero-sub">Mais de 4.500 implementos reformados e mais de 200 empresas atendidas. A Oliver Truck oferece soluções em reforma e fabricação para manter sua operação pronta para rodar.</p>
+      <div class="cta-row">
+        <button class="btn btn--whatsapp btn-lg" data-wa="geral">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm5.8 14.15c-.24.68-1.4 1.33-1.94 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.95-.31-1.63-.6-2.87-1.24-4.74-4.12-4.88-4.31-.14-.19-1.17-1.56-1.17-2.98s.74-2.11 1-2.4c.25-.28.55-.35.74-.35s.37 0 .53.01c.17.01.4-.06.62.48.24.58.81 2 .88 2.14.07.14.11.31.02.5-.09.19-.14.31-.27.48-.14.17-.29.37-.41.5-.14.14-.28.29-.12.57.16.28.72 1.2 1.55 1.94 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.61-.07.17-.2.71-.83.9-1.11.19-.28.38-.23.63-.14.26.09 1.64.78 1.92.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+          Solicitar orçamento pelo WhatsApp
+        </button>
+        <a href="#reforma-fabricacao" class="btn btn--outline btn-lg">Conhecer nossas soluções</a>
+      </div>
+      <div class="hero-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/></svg>
+        Atendimento para empresas, transportadoras e frotistas
+      </div>
+    </div>
+
+    <div class="hero-visual reveal is-visible">
+      <div class="plate-texture"></div>
+      <span class="frame-corner tl"></span>
+      <span class="frame-corner br"></span>
+      <!-- Logo oficial da Oliver Truck. Quando houver fotos reais da oficina/frota, substitua a tag <img> abaixo. -->
+      <div class="visual-frame visual-frame--logo">
+        <img class="hero-logo" src="assets/logo.jpg" alt="Oliver Truck - Implementos Rodoviários">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     NÚMEROS / PROVA
+     ====================================================================== -->
+<section class="stats" aria-label="Números da Oliver Truck">
+  <div class="container stats-grid">
+    <div class="stat reveal">
+      <div class="stat-number"><span class="count-up" data-target="20">0</span>+</div>
+      <div class="stat-label">Anos de experiência</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-number"><span class="count-up" data-target="4500">0</span>+</div>
+      <div class="stat-label">Implementos reformados</div>
+    </div>
+    <div class="stat reveal">
+      <div class="stat-number"><span class="count-up" data-target="200">0</span>+</div>
+      <div class="stat-label">Empresas atendidas</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     REFORMA OU FABRICAÇÃO?
+     ====================================================================== -->
+<section class="section" id="reforma-fabricacao">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow" style="justify-content:center; display:flex;">Nossas frentes de atuação</span>
+      <h2 class="section-title section-title--center">Do reparo à fabricação: soluções para o seu implemento.</h2>
+    </div>
+
+    <div class="split-cards">
+      <div class="split-card reveal">
+        <span class="tag">Reforma</span>
+        <h3>Precisa reformar seu implemento?</h3>
+        <p>Recupere, renove e prolongue a vida útil do seu implemento com uma empresa que possui mais de 20 anos de experiência no segmento.</p>
+        <button class="btn btn--primary" data-wa="reforma">Quero fazer uma reforma</button>
+      </div>
+      <div class="split-card reveal">
+        <span class="tag">Fabricação</span>
+        <h3>Precisa fabricar um novo implemento?</h3>
+        <p>Conte com a Oliver Truck para desenvolver uma solução de acordo com as necessidades da sua operação.</p>
+        <button class="btn btn--primary" data-wa="fabricacao">Quero fabricar um implemento</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     POR QUE ESCOLHER A OLIVER TRUCK — DIFERENCIAIS
+     ====================================================================== -->
+<section class="section section--tight plate-texture" style="background:var(--color-bg-soft); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow" style="justify-content:center; display:flex;">Por que escolher a Oliver Truck</span>
+      <h2 class="section-title section-title--center">Experiência que se transforma em resultado.</h2>
+    </div>
+    <div class="cards-grid" id="differentialsGrid"><!-- Renderizado via JS a partir do array DIFFERENTIALS --></div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     SERVIÇOS
+     ====================================================================== -->
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">O que fazemos</span>
+      <h2 class="section-title">Soluções para manter seu implemento pronto para rodar.</h2>
+      <p class="section-sub">Os itens abaixo são exemplos organizados por categoria — fale com nossa equipe para avaliar exatamente o que sua operação precisa.</p>
+    </div>
+
+    <div class="services-tabs" role="tablist" aria-label="Categorias de serviço">
+      <button class="services-tab is-active" data-tab="reforma" role="tab" aria-selected="true">Reformas</button>
+      <button class="services-tab" data-tab="fabricacao" role="tab" aria-selected="false">Fabricação</button>
+    </div>
+
+    <div class="services-panel cards-grid is-active" data-panel="reforma" id="servicesReforma"><!-- Renderizado via JS a partir de SERVICES.reforma --></div>
+    <div class="services-panel cards-grid" data-panel="fabricacao" id="servicesFabricacao"><!-- Renderizado via JS a partir de SERVICES.fabricacao --></div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     EMPRESAS E FROTISTAS (B2B)
+     ====================================================================== -->
+<section class="section b2b">
+  <div class="container b2b-grid">
+    <div class="reveal">
+      <span class="eyebrow">Para empresas e frotistas</span>
+      <h2 class="section-title">Sua frota não pode parar.</h2>
+      <p class="section-sub">Quando um implemento precisa de reforma, reparo ou substituição, o tempo parado pode representar custo para a operação. A Oliver Truck trabalha para oferecer soluções em reforma e fabricação que atendam às necessidades da sua empresa.</p>
+      <div class="b2b-audiences">
+        <div class="audience-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="7" width="15" height="10" rx="1"/><path d="M16 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="19" cy="19" r="2"/></svg> Transportadoras</div>
+        <div class="audience-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg> Frotistas</div>
+        <div class="audience-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V8l9-5 9 5v13"/><path d="M9 21v-6h6v6"/></svg> Empresas com frota própria</div>
+        <div class="audience-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> Operadores logísticos</div>
+      </div>
+    </div>
+
+    <div class="b2b-panel reveal">
+      <h4>Como apoiamos sua operação</h4>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Reforma e fabricação sob a mesma estrutura</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Avaliação técnica para entender a real necessidade da frota</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Soluções personalizadas conforme o perfil da operação</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Mais de 200 empresas já atendidas pela Oliver Truck</li>
+      </ul>
+      <button class="btn btn--whatsapp btn-block" data-wa="empresas">Falar com a Oliver Truck</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     SOBRE / EXPERIÊNCIA
+     ====================================================================== -->
+<section class="section" id="sobre">
+  <div class="container about">
+    <div class="about-visual reveal">
+      <!-- Foto real da estrutura da Oliver Truck -->
+      <img class="about-photo" src="assets/estrutura.jpg" alt="Estrutura da Oliver Truck: galpão e caminhão de implemento rodoviário">
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Quem somos</span>
+      <h2 class="section-title">Experiência para reformar. Estrutura para fabricar.</h2>
+      <p class="section-sub" style="max-width:100%;">Há mais de 20 anos, a Oliver Truck atua no segmento de implementos rodoviários, unindo experiência, conhecimento e capacidade de execução para oferecer soluções em reforma e fabricação.</p>
+      <ul class="about-points">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Mais de 20 anos de experiência no segmento</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Mais de 4.500 implementos reformados</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Mais de 200 empresas atendidas</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Atuação em reforma e fabricação de implementos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     PORTFÓLIO / GALERIA
+     ====================================================================== -->
+<section class="section section--tight" style="background:var(--color-bg-soft); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Portfólio</span>
+      <h2 class="section-title">Veja o trabalho da Oliver Truck.</h2>
+      <p class="section-sub">Estrutura pronta para receber fotos reais dos serviços — organizadas por antes, durante e depois.</p>
+    </div>
+
+    <div class="gallery-filters" id="galleryFilters">
+      <button class="gallery-filter is-active" data-filter="todos">Todos</button>
+      <button class="gallery-filter" data-filter="antes">Antes</button>
+      <button class="gallery-filter" data-filter="durante">Durante</button>
+      <button class="gallery-filter" data-filter="depois">Depois</button>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid"><!-- Renderizado via JS a partir do array GALLERY --></div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     PROCESSO DE ORÇAMENTO
+     ====================================================================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow" style="justify-content:center; display:flex;">Como funciona</span>
+      <h2 class="section-title section-title--center">Solicitar um orçamento é simples.</h2>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-connector"></div>
+      <div class="process-step reveal">
+        <div class="process-num">1</div>
+        <h3>Entre em contato</h3>
+        <p>Clique no WhatsApp e explique o que você precisa.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-num">2</div>
+        <h3>Envie fotos e informações</h3>
+        <p>Envie imagens e informações sobre o implemento ou sobre o projeto que deseja realizar.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-num">3</div>
+        <h3>Avaliação</h3>
+        <p>A equipe poderá entender melhor sua necessidade e avaliar a melhor solução.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="process-num">4</div>
+        <h3>Orçamento</h3>
+        <p>Você recebe as informações necessárias para avaliar o serviço.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:52px;">
+      <button class="btn btn--whatsapp btn-lg" data-wa="geral">Solicitar orçamento pelo WhatsApp</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     CAPTAÇÃO DE LEAD (baixa barreira de entrada)
+     ====================================================================== -->
+<section class="section section--tight">
+  <div class="container">
+    <div class="lead-band reveal">
+      <div>
+        <h3>Precisa de ajuda para entender o que seu implemento precisa?</h3>
+        <p>Envie fotos e explique sua necessidade. Nossa equipe poderá orientar você sobre os próximos passos.</p>
+      </div>
+      <button class="btn btn--whatsapp" data-wa="fotos">Enviar fotos pelo WhatsApp</button>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     FAQ
+     ====================================================================== -->
+<section class="section" id="faq" style="background:var(--color-bg-soft); border-top:1px solid var(--color-border); border-bottom:1px solid var(--color-border);">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow" style="justify-content:center; display:flex;">Dúvidas frequentes</span>
+      <h2 class="section-title section-title--center">Perguntas frequentes.</h2>
+    </div>
+    <div class="faq-list" id="faqList"><!-- Renderizado via JS a partir do array FAQ --></div>
+  </div>
+</section>
+
+<!-- ======================================================================
+     CTA FINAL DE ALTA CONVERSÃO
+     ====================================================================== -->
+<section class="section cta-final">
+  <div class="plate-texture"></div>
+  <div class="container cta-final-inner reveal">
+    <h2>Seu implemento precisa de reforma ou fabricação?</h2>
+    <p>Fale com a Oliver Truck e solicite um orçamento para sua necessidade.</p>
+    <div class="cta-row">
+      <button class="btn btn--whatsapp btn-lg" data-wa="geral">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm5.8 14.15c-.24.68-1.4 1.33-1.94 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.95-.31-1.63-.6-2.87-1.24-4.74-4.12-4.88-4.31-.14-.19-1.17-1.56-1.17-2.98s.74-2.11 1-2.4c.25-.28.55-.35.74-.35s.37 0 .53.01c.17.01.4-.06.62.48.24.58.81 2 .88 2.14.07.14.11.31.02.5-.09.19-.14.31-.27.48-.14.17-.29.37-.41.5-.14.14-.28.29-.12.57.16.28.72 1.2 1.55 1.94 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.61-.07.17-.2.71-.83.9-1.11.19-.28.38-.23.63-.14.26.09 1.64.78 1.92.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+        Solicitar orçamento pelo WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================================================================
+     FOOTER
+     ====================================================================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="Oliver Truck">
+        <p>Reforma e fabricação de implementos rodoviários há mais de 20 anos, atendendo empresas, transportadoras e frotistas.</p>
+        <div class="footer-social">
+          <!-- SEU_INSTAGRAM_AQUI: substitua pelo link real do Instagram -->
+          <a href="#" aria-label="Instagram da Oliver Truck" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <button aria-label="Falar no WhatsApp" data-wa="geral" style="background:none;border:1px solid var(--color-border);border-radius:50%;width:38px;height:38px;display:flex;align-items:center;justify-content:center;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="17" height="17" style="color:var(--color-muted);"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2z"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#reforma-fabricacao">Reforma</a></li>
+          <li><a href="#reforma-fabricacao">Fabricação</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul>
+          <li><span data-company="phone">(11) 94703-7352</span></li>
+          <li><a href="mailto:comercial@olivertruck.com.br" data-company="email">comercial@olivertruck.com.br</a></li>
+          <li><span data-company="address">Av. Francisco Xavier Correa, 1660 - Guarulhos, SP</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Orçamento</h4>
+        <ul>
+          <li><button data-wa="geral" style="background:none;border:none;color:var(--color-muted);padding:0;text-align:left;">Solicitar pelo WhatsApp</button></li>
+          <li><a href="mailto:comercial@olivertruck.com.br">Enviar e-mail</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Oliver Truck — Reforma e Fabricação de Implementos Rodoviários. Todos os direitos reservados.</span>
+      <span>CNPJ: 44.845.165/0001-30</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================================
+     BOTÃO FLUTUANTE DE WHATSAPP
+     ====================================================================== -->
+<button class="wa-float" data-wa="geral" aria-label="Falar com a Oliver Truck no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.9 9.9 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm5.8 14.15c-.24.68-1.4 1.33-1.94 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.95-.31-1.63-.6-2.87-1.24-4.74-4.12-4.88-4.31-.14-.19-1.17-1.56-1.17-2.98s.74-2.11 1-2.4c.25-.28.55-.35.74-.35s.37 0 .53.01c.17.01.4-.06.62.48.24.58.81 2 .88 2.14.07.14.11.31.02.5-.09.19-.14.31-.27.48-.14.17-.29.37-.41.5-.14.14-.28.29-.12.57.16.28.72 1.2 1.55 1.94 1.07.95 1.97 1.25 2.25 1.39.28.14.44.12.61-.07.17-.2.71-.83.9-1.11.19-.28.38-.23.63-.14.26.09 1.64.78 1.92.92.28.14.47.21.54.33.07.12.07.68-.17 1.36z"/></svg>
+</button>
+
+<!-- ======================================================================
+     LIGHTBOX (MODAL DA GALERIA)
+     ====================================================================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização de imagem">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar visualização">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <div class="lightbox-content">
+    <div class="lightbox-media" id="lightboxMedia">Imagem</div>
+    <div class="lightbox-caption">
+      <span id="lightboxCaption">—</span>
+    </div>
+  </div>
+</div>
+
+<!-- ======================================================================
+     JAVASCRIPT
+     ====================================================================== -->
+<script>
+(function(){
+  'use strict';
+
+  /* ============================================================
+     CONFIGURAÇÕES CENTRALIZADAS DA EMPRESA
+     Altere os dados abaixo para atualizar o site inteiro.
+     ============================================================ */
+  // Declarado no topo para evitar erro de referência (TDZ) quando usado
+  // dentro de renderGallery(), chamada antes da seção "REVEAL ON SCROLL".
+  // Também protegido contra navegadores/webviews antigos sem suporte real a
+  // IntersectionObserver (ex.: navegador interno de alguns apps) — nesses
+  // casos o conteúdo já fica visível por padrão via CSS (ver .reveal),
+  // e a classe "js-anim" só ativa a animação quando o suporte é confirmado.
+  let revealObserver;
+  const supportsIO = typeof window.IntersectionObserver === "function";
+  if (supportsIO){ document.documentElement.classList.add("js-anim"); }
+  function observeReveal(){
+    if (!supportsIO){
+      document.querySelectorAll(".reveal:not(.is-visible)").forEach(function(el){ el.classList.add("is-visible"); });
+      return;
+    }
+    if (!revealObserver){
+      revealObserver = new IntersectionObserver(function(entries){
+        entries.forEach(function(entry){
+          if (entry.isIntersecting){
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold:0.12 });
+    }
+    document.querySelectorAll(".reveal:not(.is-visible)").forEach(function(el){ revealObserver.observe(el); });
+  }
+
+  const COMPANY = {
+    name: "Oliver Truck",
+    whatsapp: "5511947037352",           // <-- (11) 94703-7352 | ALTERE AQUI se o número mudar
+    phoneDisplay: "(11) 94703-7352",
+    email: "comercial@olivertruck.com.br",
+    address: "Av. Francisco Xavier Correa, 1660 - Guarulhos, SP",
+    instagram: "SEU_INSTAGRAM_AQUI"       // <-- ALTERE AQUI: usuário do Instagram
+  };
+  const WHATSAPP_NUMBER = COMPANY.whatsapp;
+
+  function openWhatsApp(message){
+    const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank", "noopener");
+  }
+
+  const MESSAGES = {
+    geral:      "Olá! Gostaria de solicitar um orçamento com a Oliver Truck.",
+    reforma:    "Olá! Gostaria de solicitar um orçamento para reforma de um implemento rodoviário.",
+    fabricacao: "Olá! Gostaria de solicitar um orçamento para fabricação de um implemento rodoviário.",
+    empresas:   "Olá! Sou responsável por uma empresa/frota e gostaria de conversar sobre uma necessidade relacionada a implementos rodoviários.",
+    fotos:      "Olá! Quero enviar fotos e informações do meu implemento para solicitar um orçamento."
+  };
+
+  document.querySelectorAll("[data-wa]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      const key = btn.getAttribute("data-wa");
+      openWhatsApp(MESSAGES[key] || MESSAGES.geral);
+    });
+  });
+
+  // Preenche dados de contato no footer a partir do objeto COMPANY
+  document.querySelectorAll('[data-company="phone"]').forEach(function(el){ el.textContent = COMPANY.phoneDisplay; });
+  document.querySelectorAll('[data-company="email"]').forEach(function(el){ el.textContent = COMPANY.email; });
+  document.querySelectorAll('[data-company="address"]').forEach(function(el){ el.textContent = COMPANY.address; });
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ============================================================
+     ÍCONES REUTILIZÁVEIS (SVG inline, sem dependências externas)
+     ============================================================ */
+  const ICONS = {
+    clock:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>',
+    layers:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>',
+    users:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3.2"/><path d="M2.5 20c0-3.6 2.9-6.2 6.5-6.2s6.5 2.6 6.5 6.2"/><circle cx="17.5" cy="9" r="2.6"/><path d="M15 13.6c2.6.3 4.6 2.4 4.6 5.2"/></svg>',
+    tools:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2-2 2.6-2.6z"/></svg>',
+    target:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="0.8" fill="currentColor"/></svg>',
+    shield:  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l7 3v6c0 4.8-3 8-7 9-4-1-7-4.2-7-9V6l7-3z"/></svg>',
+    box:     '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg>',
+    factory: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21V11l5 3V11l5 3V8l6 4v9H3z"/></svg>',
+    truck:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="13" height="10"/><path d="M14 9h4l4 4v3h-8z"/><circle cx="6" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></svg>',
+    arrow:   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+    zoom:    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>'
+  };
+
+  /* ============================================================
+     DIFERENCIAIS — editável
+     ============================================================ */
+  const DIFFERENTIALS = [
+    { icon:"clock",  title:"Mais de 20 anos de experiência", text:"Conhecimento construído ao longo de duas décadas atuando no segmento de implementos rodoviários." },
+    { icon:"layers", title:"Mais de 4.500 implementos reformados", text:"Experiência prática adquirida em milhares de implementos que passaram pela nossa operação." },
+    { icon:"users",  title:"Mais de 200 empresas atendidas", text:"Empresas de diferentes perfis já confiaram seus implementos à Oliver Truck." },
+    { icon:"box",    title:"Reforma e fabricação", text:"Uma solução mais completa para empresas que precisam recuperar, adaptar ou desenvolver implementos." },
+    { icon:"target", title:"Atendimento personalizado", text:"Cada operação possui necessidades diferentes. A solução deve acompanhar a realidade de cada cliente." },
+    { icon:"shield", title:"Compromisso com qualidade", text:"Execução cuidadosa, atenção aos detalhes e foco em entregar uma solução adequada à necessidade do cliente." }
+  ];
+
+  /* ============================================================
+     SERVIÇOS — editável (nome, descrição, imagem, CTA)
+     ============================================================ */
+  const SERVICES = {
+    reforma: [
+      { title:"Reforma de Baús", description:"Recuperação estrutural e de acabamento de baús para devolver a condição de uso.", icon:"box", wa:"reforma" },
+      { title:"Reforma de Sider", description:"Reparo de lonas, estrutura e ferragens de implementos do tipo sider.", icon:"layers", wa:"reforma" },
+      { title:"Reforma de Carrocerias", description:"Recuperação de carrocerias desgastadas pelo uso e pelo tempo de operação.", icon:"truck", wa:"reforma" },
+      { title:"Reparos Estruturais", description:"Correção de pontos estruturais comprometidos, com foco em segurança e durabilidade.", icon:"tools", wa:"reforma" },
+      { title:"Recuperação de Implementos", description:"Recuperação geral de implementos que já passaram por bastante uso na operação.", icon:"shield", wa:"reforma" },
+      { title:"Adequações e Melhorias", description:"Ajustes e melhorias no implemento conforme a necessidade da sua operação.", icon:"target", wa:"reforma" }
+    ],
+    fabricacao: [
+      { title:"Fabricação de Implementos Rodoviários", description:"Desenvolvimento de implementos novos conforme a necessidade da operação.", icon:"factory", wa:"fabricacao" },
+      { title:"Fabricação Personalizada", description:"Soluções pensadas para atender particularidades específicas de cada cliente.", icon:"target", wa:"fabricacao" },
+      { title:"Desenvolvimento de Soluções Específicas", description:"Projetos desenvolvidos de acordo com o tipo de carga e operação do cliente.", icon:"tools", wa:"fabricacao" },
+      { title:"Adequações Conforme Necessidade da Operação", description:"Adaptações no projeto para atender melhor a rotina da sua frota.", icon:"layers", wa:"fabricacao" }
+    ]
+  };
+
+  /* ============================================================
+     GALERIA — editável (troque "image" pelo caminho real da foto)
+     ============================================================ */
+  const GALLERY = [
+    { image:"assets/gallery/gallery-01-antes.jpg", category:"antes",   label:"Antes" },
+    { image:"assets/gallery/gallery-02-depois.jpg", category:"depois",  label:"Depois" },
+    { image:"assets/gallery/gallery-03-antes.jpg", category:"antes",   label:"Antes" },
+    { image:"assets/gallery/gallery-04-durante.jpg", category:"durante", label:"Durante" },
+    { image:"assets/gallery/gallery-05-depois.jpg", category:"depois",  label:"Depois" },
+    { image:"assets/gallery/gallery-06-antes.jpg", category:"antes",   label:"Antes" },
+    { image:"assets/gallery/gallery-07-depois.jpg", category:"depois",  label:"Depois" }
+  ];
+
+  /* ============================================================
+     FAQ — editável
+     ============================================================ */
+  const FAQ = [
+    { q:"Quais tipos de implementos vocês reformam?", a:"Trabalhamos com reforma de diversos tipos de implementos rodoviários. Fale com nossa equipe pelo WhatsApp e envie fotos para avaliarmos o seu caso específico." },
+    { q:"A Oliver Truck também fabrica implementos?", a:"Sim. Além da reforma, a Oliver Truck atua também com fabricação de implementos rodoviários, desenvolvendo soluções conforme a necessidade da sua operação." },
+    { q:"Posso enviar fotos para solicitar um orçamento?", a:"Sim. Você pode entrar em contato pelo WhatsApp e enviar fotos e informações sobre o implemento ou o projeto que deseja realizar." },
+    { q:"Como funciona o orçamento?", a:"Você entra em contato pelo WhatsApp, apresenta sua necessidade e nossa equipe orienta os próximos passos para avaliação do serviço." },
+    { q:"Vocês atendem empresas e frotistas?", a:"Sim. A Oliver Truck atende empresas, transportadoras e frotistas que precisam manter seus implementos em operação." },
+    { q:"Quanto custa uma reforma?", a:"O valor varia conforme cada projeto. Solicite um orçamento pelo WhatsApp para receber as informações de acordo com a sua necessidade." },
+    { q:"Quanto tempo leva uma reforma ou fabricação?", a:"O prazo depende das características de cada projeto. Fale com nossa equipe para avaliar o tempo estimado conforme o seu caso." }
+  ];
+
+  /* ============================================================
+     RENDERIZAÇÃO — DIFERENCIAIS
+     ============================================================ */
+  const diffGrid = document.getElementById("differentialsGrid");
+  if (diffGrid){
+    diffGrid.innerHTML = DIFFERENTIALS.map(function(d){
+      return '<div class="card reveal">' +
+               '<div class="card-icon">' + (ICONS[d.icon] || "") + '</div>' +
+               '<h3>' + d.title + '</h3>' +
+               '<p>' + d.text + '</p>' +
+             '</div>';
+    }).join("");
+  }
+
+  /* ============================================================
+     RENDERIZAÇÃO — SERVIÇOS
+     ============================================================ */
+  function renderServices(list, containerId){
+    const el = document.getElementById(containerId);
+    if (!el) return;
+    el.innerHTML = list.map(function(s){
+      return '<div class="card service-card reveal">' +
+               '<div class="card-icon">' + (ICONS[s.icon] || ICONS.tools) + '</div>' +
+               '<h3>' + s.title + '</h3>' +
+               '<p>' + s.description + '</p>' +
+               '<button class="service-cta-link" data-wa="' + s.wa + '">Solicitar orçamento ' + ICONS.arrow + '</button>' +
+             '</div>';
+    }).join("");
+  }
+  renderServices(SERVICES.reforma, "servicesReforma");
+  renderServices(SERVICES.fabricacao, "servicesFabricacao");
+
+  // Rebind data-wa após renderização dinâmica dos serviços
+  function bindWaButtons(scope){
+    scope.querySelectorAll("[data-wa]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        openWhatsApp(MESSAGES[btn.getAttribute("data-wa")] || MESSAGES.geral);
+      });
+    });
+  }
+  bindWaButtons(document.getElementById("servicesReforma"));
+  bindWaButtons(document.getElementById("servicesFabricacao"));
+
+  // Tabs de serviços
+  document.querySelectorAll(".services-tab").forEach(function(tab){
+    tab.addEventListener("click", function(){
+      document.querySelectorAll(".services-tab").forEach(function(t){ t.classList.remove("is-active"); t.setAttribute("aria-selected","false"); });
+      tab.classList.add("is-active");
+      tab.setAttribute("aria-selected","true");
+      const target = tab.getAttribute("data-tab");
+      document.querySelectorAll(".services-panel").forEach(function(p){
+        p.classList.toggle("is-active", p.getAttribute("data-panel") === target);
+      });
+    });
+  });
+
+  /* ============================================================
+     RENDERIZAÇÃO — GALERIA + LIGHTBOX
+     ============================================================ */
+  const galleryGrid = document.getElementById("galleryGrid");
+  function renderGallery(filter){
+    if (!galleryGrid) return;
+    const items = filter && filter !== "todos" ? GALLERY.filter(function(g){ return g.category === filter; }) : GALLERY;
+    galleryGrid.innerHTML = items.map(function(g, i){
+      const media = g.image
+        ? '<img src="' + g.image + '" alt="' + g.label + ' — serviço Oliver Truck" loading="lazy">'
+        : '<div class="ph">Foto em breve</div>';
+      return '<div class="gallery-item reveal" data-image="' + (g.image || "") + '" data-caption="' + g.label + '">' +
+               '<span class="tag-cat">' + g.label + '</span>' +
+               media +
+               '<div class="zoom-icon">' + ICONS.zoom + '</div>' +
+             '</div>';
+    }).join("");
+    observeReveal();
+    galleryGrid.querySelectorAll(".gallery-item").forEach(function(item){
+      item.addEventListener("click", function(){
+        openLightbox(item.getAttribute("data-image"), item.getAttribute("data-caption"));
+      });
+    });
+  }
+  renderGallery("todos");
+
+  document.querySelectorAll(".gallery-filter").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      document.querySelectorAll(".gallery-filter").forEach(function(b){ b.classList.remove("is-active"); });
+      btn.classList.add("is-active");
+      renderGallery(btn.getAttribute("data-filter"));
+    });
+  });
+
+  const lightbox = document.getElementById("lightbox");
+  const lightboxCaption = document.getElementById("lightboxCaption");
+  const lightboxMedia = document.getElementById("lightboxMedia");
+  function openLightbox(imageSrc, caption){
+    lightboxCaption.textContent = caption;
+    lightboxMedia.innerHTML = imageSrc
+      ? '<img src="' + imageSrc + '" alt="' + caption + '" style="width:100%;height:100%;object-fit:contain;">'
+      : "Foto em breve";
+    lightbox.classList.add("is-open");
+  }
+  function closeLightbox(){ lightbox.classList.remove("is-open"); }
+  document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+  lightbox.addEventListener("click", function(e){ if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeLightbox(); });
+
+  /* ============================================================
+     RENDERIZAÇÃO — FAQ (ACCORDION)
+     ============================================================ */
+  const faqList = document.getElementById("faqList");
+  if (faqList){
+    faqList.innerHTML = FAQ.map(function(item, i){
+      return '<div class="faq-item" id="faq-' + i + '">' +
+               '<button class="faq-question" aria-expanded="false">' +
+                 '<span>' + item.q + '</span><span class="plus"></span>' +
+               '</button>' +
+               '<div class="faq-answer"><div class="faq-answer-inner">' + item.a + '</div></div>' +
+             '</div>';
+    }).join("");
+
+    faqList.querySelectorAll(".faq-item").forEach(function(faqItem){
+      const question = faqItem.querySelector(".faq-question");
+      const answer = faqItem.querySelector(".faq-answer");
+      question.addEventListener("click", function(){
+        const isOpen = faqItem.classList.contains("is-open");
+        faqList.querySelectorAll(".faq-item").forEach(function(other){
+          other.classList.remove("is-open");
+          other.querySelector(".faq-question").setAttribute("aria-expanded","false");
+          other.querySelector(".faq-answer").style.maxHeight = null;
+        });
+        if (!isOpen){
+          faqItem.classList.add("is-open");
+          question.setAttribute("aria-expanded","true");
+          answer.style.maxHeight = answer.scrollHeight + "px";
+        }
+      });
+    });
+  }
+
+  /* ============================================================
+     MENU MOBILE
+     ============================================================ */
+  const hamburgerBtn = document.getElementById("hamburgerBtn");
+  const mobileNav = document.getElementById("mobileNav");
+  hamburgerBtn.addEventListener("click", function(){
+    const isOpen = mobileNav.classList.toggle("is-open");
+    hamburgerBtn.classList.toggle("is-active", isOpen);
+    hamburgerBtn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  });
+  mobileNav.querySelectorAll("a").forEach(function(a){
+    a.addEventListener("click", function(){
+      mobileNav.classList.remove("is-open");
+      hamburgerBtn.classList.remove("is-active");
+      hamburgerBtn.setAttribute("aria-expanded","false");
+    });
+  });
+
+  /* ============================================================
+     HEADER — sombra ao rolar
+     ============================================================ */
+  const siteHeader = document.getElementById("siteHeader");
+  window.addEventListener("scroll", function(){
+    siteHeader.classList.toggle("is-scrolled", window.scrollY > 12);
+  }, { passive:true });
+
+  /* ============================================================
+     CONTADOR ANIMADO DOS NÚMEROS
+     ============================================================ */
+  function animateCount(el){
+    const target = parseInt(el.getAttribute("data-target"), 10) || 0;
+    const duration = 1400;
+    const start = performance.now();
+    function step(now){
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.floor(eased * target).toLocaleString("pt-BR");
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString("pt-BR");
+    }
+    requestAnimationFrame(step);
+  }
+
+  if (supportsIO){
+    const countObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting){
+          animateCount(entry.target);
+          countObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.5 });
+    document.querySelectorAll(".count-up").forEach(function(el){ countObserver.observe(el); });
+  } else {
+    // Navegador sem suporte a IntersectionObserver: mostra os números direto, sem animação
+    document.querySelectorAll(".count-up").forEach(function(el){
+      const target = parseInt(el.getAttribute("data-target"), 10) || 0;
+      el.textContent = target.toLocaleString("pt-BR");
+    });
+  }
+
+  /* ============================================================
+     REVEAL ON SCROLL — ativação inicial (função já definida no topo)
+     ============================================================ */
+  observeReveal();
+
+  // Rede de segurança: caso o IntersectionObserver exista mas não dispare
+  // (comportamento observado em alguns navegadores/webviews antigos),
+  // garante que todo o conteúdo fique visível após um curto período.
+  setTimeout(function(){
+    document.querySelectorAll(".reveal:not(.is-visible)").forEach(function(el){ el.classList.add("is-visible"); });
+  }, 2000);
+
+})();
+</script>
+</body>
+</html>
